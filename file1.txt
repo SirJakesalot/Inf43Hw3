@@ -1,3 +1,2 @@
-jacob armentrout Computer Science
-restaurant 1
-movie 1
+jacob armentrout Computer Science restaurant1 movie1
+gray
