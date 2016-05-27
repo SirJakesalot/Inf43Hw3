@@ -1,0 +1,94 @@
+commit 407cfe5b7c153a8a8bd7748c45a5c5ac5bb34917
+Author: SirJakesalot <jarmentr@uci.edu>
+Date:   Thu May 26 17:57:03 2016 -0700
+
+    Re-adding file2.txt
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..34736f3
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1 @@
++2017 Software Developer
+
+commit 1c1c7de83bad1cc38130f691e8993c1d89be01bd
+Author: SirJakesalot <jarmentr@uci.edu>
+Date:   Thu May 26 17:54:23 2016 -0700
+
+    Deleting file2.txt
+
+diff --git a/file1.txt b/file1.txt
+index ff70da9..6ce9ced 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1,3 +1,2 @@
+-jacob armentrout Computer Science
+-restaurant 1
+-movie 1
++jacob armentrout Computer Science restaurant1 movie1
++gray
+diff --git a/file2.txt b/file2.txt
+deleted file mode 100644
+index 34736f3..0000000
+--- a/file2.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-2017 Software Developer
+
+commit ebda61613a5f5810acc712765c416859684bca1f
+Author: SirJakesalot <jarmentr@uci.edu>
+Date:   Thu May 26 17:51:06 2016 -0700
+
+    Adding file2
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..34736f3
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1 @@
++2017 Software Developer
+
+commit 021374f50664f64986a8fb36a683daccc5e573d1
+Author: SirJakesalot <jarmentr@uci.edu>
+Date:   Thu May 26 17:45:33 2016 -0700
+
+    Added favorite restaurant and movie
+
+diff --git a/file1.txt b/file1.txt
+index aae51c8..ff70da9 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1,3 @@
+ jacob armentrout Computer Science
++restaurant 1
++movie 1
+
+commit 372249c85532d7a760216fc81a47bdc1850cc8bf
+Author: SirJakesalot <jarmentr@uci.edu>
+Date:   Thu May 26 17:43:53 2016 -0700
+
+    Now has my major
+
+diff --git a/file1.txt b/file1.txt
+index 876098e..aae51c8 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1 @@
+-jacob armentrout 66598462
++jacob armentrout Computer Science
+
+commit 163ef658a5bb27969e973e8f3bdb1cb0eea3a310
+Author: Jacob Armentrout <jarmentr@uci.edu>
+Date:   Thu May 26 17:41:27 2016 -0700
+
+    Commiting a new file with my name
+
+diff --git a/file1.txt b/file1.txt
+new file mode 100644
+index 0000000..876098e
+--- /dev/null
++++ b/file1.txt
+@@ -0,0 +1 @@
++jacob armentrout 66598462

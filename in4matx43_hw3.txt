@@ -1,0 +1,49 @@
+commit c7c7c0e0edc1cd49e769dc8dc991c6b0db28afc7
+Author: Chad Birch <chad.birch@gmail.com>
+Date:   Mon Dec 7 18:27:19 2015 -0700
+
+    Add hook for subreddit creation
+
+commit c801fbd0116b5bbdfbd496425c29ce269120d0be
+Author: Chad Birch <chad.birch@gmail.com>
+Date:   Mon Dec 7 17:04:23 2015 -0700
+
+    Event add_target_fields: add target_created_ts
+    
+    This will be able to be used to determine the "lag time" of actions like
+    voting, reports, and mod actions.
+
+commit 961ebae4f7c8e67d002d0989bcc0a9e6bbe0b3de
+Author: Chad Birch <chad.birch@gmail.com>
+Date:   Mon Dec 7 16:57:43 2015 -0700
+
+    Event add_target_fields: minor logic refactoring
+    
+    This logic was starting to get a little tangled in here with some
+    unrelated things being mixed together, so this just splits it out so
+    that each check is self-contained and only related to the things
+    actually being added at that time.
+
+commit 5d9bdeb36f713b73d4de00fa9fd4ed4ad9a45d41
+Author: Neil Williams <neil@reddit.com>
+Date:   Sun Aug 2 16:43:06 2015 -0700
+
+    stats: Don't swallow exceptions in timer context manager.
+    
+    The return value of the __exit__ function of a context manager is only
+    used for its truthiness to determine if any exceptions within the "with"
+    block should be swallowed.
+    
+    From PEP-0343:
+    
+        IMPORTANT: if mgr.__exit__() returns a "true" value, the exception
+        is "swallowed".
+    
+    Since the timer was returning "self" which evaluates truthily, any
+    exceptions inside a timer "with" block would be swallowed. Scary!
+
+commit 21dd73189f7ffa045bfdd4f3a8be652d083bfdb1
+Author: David Wick <wick.d.spencer@gmail.com>
+Date:   Wed Dec 9 12:18:37 2015 -0800
+
+    Ads: Remove un-targeting keywords for selfserve ad requests only
